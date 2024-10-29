@@ -107,11 +107,9 @@ void sol(){
     int a=0,b=0;
     for(auto [vv,ff,rere]:flow.E[ss]){
         if(vv>=1){
-            if(ff==0){
-                a++;
-            }else {
+            if(ff==1){
                 b++;
-            }
+            }else a++;
         }
     }
     int c=0,d=0;
